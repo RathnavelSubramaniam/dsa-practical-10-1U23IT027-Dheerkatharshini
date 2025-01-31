@@ -49,7 +49,6 @@ public void deleteEnd()
     if (head == null) {
         System.out.println("List is Empty");
     } else if (head.next == null) {
-        System.out.println("Deleted Element: " + head.data);
         head = null;
         tail = null;
     } else {
@@ -59,7 +58,7 @@ public void deleteEnd()
             prev = temp;
             temp = temp.next;
         }
-        System.out.println("Deleted Element is:3");
+        System.out.println("Deleted Element is:"+temp.data);
         prev.next = null;
         tail = prev;
     }
